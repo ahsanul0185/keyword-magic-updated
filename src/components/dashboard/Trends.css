@@ -1,0 +1,132 @@
+.trends-container {
+  width: 79%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 96px;
+}
+
+.trends-container h1 {
+  color: var(--off-white-primary);
+}
+
+.trends-banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.live {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 2px;
+  width: 80px;
+  text-align: center;
+  border-radius: 32px;
+  background-color: #0000005b;
+  color: #ff798d;
+  border: 2px solid #8a709d;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+
+.live-svg {
+  animation: pulse 2s infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .live {
+    height: 40px;
+    padding: 10px;
+  }
+  .live-svg {
+    margin-left: 5px;
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Scrollable container setup (top to bottom scroll) */
+.trend-list {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;  /* Stack items vertically */
+  justify-content: flex-start;
+  touch-action: auto;
+  margin-top: 20px;
+  position: relative;
+  max-height: 300px; /* Limit the height to show only 3 items */
+  padding: 10px 0;
+  gap: 10px;  /* Space between items */
+  -webkit-overflow-scrolling: touch;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%); /* For Safari */
+}
+
+/* Hide scrollbar but keep scrolling enabled */
+.trend-list::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+/* Style for each keyword box */
+.trends-field {
+  background: radial-gradient(
+      50.45% 50.61% at 25.81% 42.66%,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.04) 100%
+    ),
+    linear-gradient(158.64deg, #3c2e48 0.88%, #221032 98.99%);
+  width: 100%;  /* Take full width of the container */
+  height: 72px;
+  padding: 24px 40px;
+  border-radius: 20px;
+  border: 1px solid #8a709d;
+  color: var(--off-white-primary);
+  outline: none;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  margin: 0; /* Remove margin to avoid extra spacing */
+  text-align: center; /* Center text horizontally */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.trends-field:hover {
+  font-weight: bold;
+  background: radial-gradient(
+      50.45% 50.61% at 25.81% 42.66%,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.04) 100%
+    ),
+    linear-gradient(158.64deg, #48372e 0.88%, #322210 98.99%);
+}
+
+.copied-message {
+  margin-left: 10px;
+  color: green;
+  font-size: 12px;
+  animation: fade-out 2s ease forwards;
+}
+
+.beta-banner {
+  color: #ff000000;
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .beta-banner {
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+    margin: 10px 0;
+    visibility: visible;
+  }  
+}

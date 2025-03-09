@@ -1,0 +1,26 @@
+.slick-prev {
+  content: url("../../assets/move-right.svg");
+  top: auto;
+  bottom: -84px;
+  width: 48px;
+  height: 48px;
+  left: calc(45.5% - 15px);
+  transform: rotate(180deg);
+}
+.slick-next {
+  content: url("../../assets/move-right.svg");
+  top: auto;
+  bottom: -108px;
+  width: 48px;
+  height: 48px;
+  right: calc(45.5% - 15px);
+}
+
+@media (max-width: 768px) {
+  .slick-prev {
+    left: calc(45.5% - 45px) !important;
+  }
+  .slick-next {
+    right: calc(45.5% - 45px) !important;
+  }
+}

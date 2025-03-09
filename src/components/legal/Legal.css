@@ -1,0 +1,30 @@
+.legal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 8%;
+  z-index: 1 !important;
+  position: relative;
+}
+
+.legal-text {
+  color: rgb(213, 213, 213);
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.legal-header { 
+  margin-bottom: 2%;
+  margin-top: 2%;
+  text-align: left;
+}
+
+.legal-ul { margin: 0 0 1em 2em; }
+
+.legal-a { color: rgb(71, 110, 141);}

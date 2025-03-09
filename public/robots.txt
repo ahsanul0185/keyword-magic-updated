@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /paymentsuccess/
+Disallow: /paymentcancel/
+Disallow: /dashboard/
+Disallow: /login/
+Allow: /
+Sitemap: https://www.keywordmagic.io/sitemap.xml
