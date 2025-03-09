@@ -1473,7 +1473,8 @@ body.modal-open {
   .video-container,
   .made-for-wrapper,
   .local-traffic-wrapper,
-  .ai-keyword-wrapper {
+  .ai-keyword-wrapper
+  .reliable-data-wrapper {
     padding: 46px 0px;
   }
 

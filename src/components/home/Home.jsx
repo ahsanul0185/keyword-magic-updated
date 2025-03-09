@@ -15,7 +15,7 @@ import FeaturedSection from "./FeaturedSection.jsx";
 import LatestInsights from "./LatestInsights.jsx";
 function Home() {
   return (
-    <div>
+    <div style={{overflowX : "hidden"}}>
       <KeywordSection></KeywordSection>
       <MadeForSection></MadeForSection>
       <CompareKeyword></CompareKeyword>
