@@ -1698,6 +1698,10 @@ body.modal-open {
     height: auto;
     aspect-ratio: 16/9;
   }
+
+  .reliable-data-wrapper {
+    padding: 46px 0;
+  }
 }
 
 @media (max-width: 640px) {
