@@ -34,6 +34,10 @@ const LatestInsights = () => {
                       <InsightCard key={idx} img={item.img} title={item.title} description={ item.description } />
                   ))}
               </div>
+
+              <div className=' more-article-btn'>
+              <button className="card-btn-basic">View More Articles</button>
+              </div>
           </div>
     </section>
   )

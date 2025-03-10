@@ -857,6 +857,16 @@ body.modal-open {
   font-weight: 400;
 }
 
+.more-article-btn {
+  width: fit-content;
+  text-align: center;
+  margin: 36px auto;
+}
+
+.more-article-btn button {
+  padding: 8px 32px;
+}
+
 /*------------------------------------------------------------------------------------------------  */
 
 .compare-keyword-wrapper {
