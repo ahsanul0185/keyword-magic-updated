@@ -830,12 +830,18 @@ body.modal-open {
   cursor: pointer;
 }
 
-.insight-card img {
+.insight-card-image {
   width: 100%;
   aspect-ratio: 272/155;
   border-radius: 6px;
-  display: block;
+  overflow: hidden;
   flex-shrink: 0;
+}
+
+.insight-card img {
+  width: 100%;
+  display: block;
+  transform: scale(1.01);
 }
 
 .insight-card-title {
